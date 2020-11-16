@@ -7,6 +7,7 @@ const Footer = ({ t }) => (
         <p>
             {t('description')}
         </p>
+
         <p>
             next-i18next v
             {version}

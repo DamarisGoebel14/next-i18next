@@ -3,7 +3,7 @@ import { withTranslation, Link } from '../i18n'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const SecondPage = ({ t }) => (
+const Zweite = ({ t }) => (
     <>
         <main>
             <Header title={t('h1')} />
@@ -19,12 +19,12 @@ const SecondPage = ({ t }) => (
     </>
 )
 
-SecondPage.getInitialProps = async () => ({
+Zweite.getInitialProps = async () => ({
     namespacesRequired: ['second-page', 'footer'],
 })
 
-SecondPage.propTypes = {
+Zweite.propTypes = {
     t: PropTypes.func.isRequired,
 }
 
-export default withTranslation('second-page')(SecondPage)
+export default withTranslation('second-page')(Zweite)

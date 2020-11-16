@@ -10,11 +10,11 @@ const Homepage = ({ t }) => (
         <div>
           <button
               type='button'
-              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'de' : 'en')}
+              onClick={() => i18n.changeLanguage(i18n.language === 'de' ? 'en' : 'de')}
           >
             {t('change-locale')}
           </button>
-          <Link href='/second-page'>
+          <Link href='/zweite'>
             <button
                 type='button'
             >
